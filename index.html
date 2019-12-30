@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h2>Currency Converter</h2>
+
+    <select id="fromCurrency">
+        <option value="USD" selected="selected">USD</option>
+        <option value="EUR">EUR</option>
+        <option value="UAH">UAH</option>
+        <option value="GBP">GBP</option>
+        <option value="CNY">CNY</option>
+        <option value="CSK">CSK</option>
+        <option value="JPY">JPY</option>
+        <option value="RUR">RUR</option>
+        <option value="SEK">SEK</option>
+        <option value="CHF">CHF</option>
+    </select>
+
+    <select id="toCurrency">
+        <option value="UAH" selected="selected">UAH</option>
+        <option value="EUR">EUR</option>
+        <option value="USD">USD</option>
+        <option value="GBP">GBP</option>
+        <option value="CNY">CNY</option>
+        <option value="CSK">CSK</option>
+        <option value="JPY">JPY</option>
+        <option value="RUR">RUR</option>
+        <option value="SEK">SEK</option>
+        <option value="CHF">CHF</option>
+    </select>
+
+    <input type="number" placeholder="amount" id="amount" value="" >
+    <button type="button" onclick="calc()">Calculate</button>
+
+    <div id="parent"></div>
+    
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="currency-converter.js"></script>
+</body>
+</html>
